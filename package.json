@@ -1,0 +1,33 @@
+{
+  "name": "with-page-mode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "go-publish": "npm publish --access public",
+    "dev": "rm -fr ./dist && tsc -p ./config/tsconfig.dev.json",
+    "build": "rm -fr ./dist && tsc -p ./config/tsconfig.prod.json",
+    "test": "jest -c ./config/jest.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/enzyme": "^3.1.15",
+    "@types/enzyme-adapter-react-16": "^1.0.3",
+    "@types/jest": "^23.3.10",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "jest": "^23.6.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.2.2"
+  }
+}
